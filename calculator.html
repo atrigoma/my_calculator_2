@@ -6,7 +6,6 @@ function cube() {
  num.value = Math.pow(num.value, 3);
 }
 
-
 function sin() {
  var num = document.getElementById("n1");
  num.value = Math.sin(num.value);
@@ -17,12 +16,21 @@ function fourth() {
  num.value = Math.pow(num.value, 4);
 }
 
+function square() {
+ var num = document.getElementById("n1");
+ num.value = Math.pow(num.value, 2);
+}
+
 </script>
 </head>
 <body>
  <h1>Calculadora de Alvaro Trigo</h1>
  Number:
  <input type="text" id="n1">
+ <p>
+ <button onclick="square()"> x^2 </button>
+ </p>
+
  <p>
  <button onclick="cube()"> x^3 </button>
  </p>
