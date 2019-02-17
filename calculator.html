@@ -21,12 +21,21 @@ function square() {
  num.value = Math.pow(num.value, 2);
 }
 
+function divide() {
+ var num = document.getElementById("n1");
+ num.value = 1/num.value;
+}
+
 </script>
 </head>
 <body>
  <h1>Calculadora de Alvaro Trigo</h1>
  Number:
  <input type="text" id="n1">
+ <p>
+ <button onclick="divide()"> 1/x </button>
+ </p>
+
  <p>
  <button onclick="square()"> x^2 </button>
  </p>
